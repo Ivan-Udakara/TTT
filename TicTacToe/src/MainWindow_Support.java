@@ -26,7 +26,7 @@ public class MainWindow_Support extends JPanel {
 	Image backGroundImg = null;
 	
 	/*  creates buttons for the MainWindow  */
-	JButton btnPlay = new JButton("Paly");
+	JButton btnPlay = new JButton("Play");
 	JButton btnStatistics = new JButton("Statistics");
 	JButton btnExit = new JButton("Exit");
 	
@@ -37,7 +37,7 @@ public class MainWindow_Support extends JPanel {
 		MediaTracker mediaTrackerObj = new MediaTracker(this);
 		
 		/*  assigns the back ground image to the Image variable  */
-		backGroundImg = Toolkit.getDefaultToolkit().getImage("src/backGroundImg01.jpg");
+		backGroundImg = Toolkit.getDefaultToolkit().getImage("src/images/backGroundImg01.jpg");
 		mediaTrackerObj.addImage(backGroundImg, 0);
 		
 		try{

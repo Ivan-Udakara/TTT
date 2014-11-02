@@ -63,7 +63,7 @@ public class GameWindow {
 		
 	/*	lblBackground	*/
 		/*	creates a new JLabel and set its background image	*/
-		lblBackground = new JLabel(new ImageIcon("src/backGroundImg01.jpg"));
+		lblBackground = new JLabel(new ImageIcon("src/images/backGroundImg01.jpg"));
 		/*	adds that JLabel(above created "lblBackgdound") to the gameWindowFrm	*/
 		gameWindowFrm.add(lblBackground);
 		
@@ -71,7 +71,7 @@ public class GameWindow {
 		lblBackground.setLayout(new FlowLayout());
 		
 	/*	lblBtn	*/
-		lblBtn = new JLabel(new ImageIcon("src/background_grid_330x330.jpg"));
+		lblBtn = new JLabel(new ImageIcon("src/images/background_grid_330x330.jpg"));
 		
 		/*	adds lblBtn to lblBackground	*/
 		lblBackground.add(lblBtn);
@@ -148,12 +148,15 @@ public class GameWindow {
 				System.out.println("you pressed btn1");
 				int imageNumber = gameWindow_supportObj.clickMultiPlayer(1);
 				if(imageNumber == 1)
-					btn1.setIcon(new ImageIcon("src/notification_error.png"));
+					btn1.setIcon(new ImageIcon("src/images/notification_error.png"));
 				else if(imageNumber == 2)
-					btn1.setIcon(new ImageIcon("src/dot.png"));
+					btn1.setIcon(new ImageIcon("src/images/dot.png"));
+				
+				gameWindow_supportObj.checkGameStatus();
 				
 			}
 		});
+		
 		
 		btn2.addActionListener(new ActionListener() {
 			
@@ -162,12 +165,15 @@ public class GameWindow {
 				System.out.println("you pressed btn2");
 				int imageNumber = gameWindow_supportObj.clickMultiPlayer(2);
 				if(imageNumber == 1)
-					btn2.setIcon(new ImageIcon("src/notification_error.png"));
+					btn2.setIcon(new ImageIcon("src/images/notification_error.png"));
 				else if(imageNumber == 2)
-					btn2.setIcon(new ImageIcon("src/dot.png"));
+					btn2.setIcon(new ImageIcon("src/images/dot.png"));
+				
+				gameWindow_supportObj.checkGameStatus();
 				
 			}
 		});
+		
 		
 		btn3.addActionListener(new ActionListener() {
 			
@@ -176,9 +182,11 @@ public class GameWindow {
 				System.out.println("you pressed btn3");
 				int imageNumber = gameWindow_supportObj.clickMultiPlayer(3);
 				if(imageNumber == 1)
-					btn3.setIcon(new ImageIcon("src/notification_error.png"));
+					btn3.setIcon(new ImageIcon("src/images/notification_error.png"));
 				else if(imageNumber == 2)
-					btn3.setIcon(new ImageIcon("src/dot.png"));
+					btn3.setIcon(new ImageIcon("src/images/dot.png"));
+				
+				gameWindow_supportObj.checkGameStatus();
 				
 			}
 		});
@@ -190,9 +198,11 @@ public class GameWindow {
 				System.out.println("you pressed btn4");
 				int imageNumber = gameWindow_supportObj.clickMultiPlayer(4);
 				if(imageNumber == 1)
-					btn4.setIcon(new ImageIcon("src/notification_error.png"));
+					btn4.setIcon(new ImageIcon("src/images/notification_error.png"));
 				else if(imageNumber == 2)
-					btn4.setIcon(new ImageIcon("src/dot.png"));
+					btn4.setIcon(new ImageIcon("src/images/dot.png"));
+				
+				gameWindow_supportObj.checkGameStatus();
 				
 			}
 		});
@@ -204,9 +214,11 @@ public class GameWindow {
 				System.out.println("you pressed btn5");
 				int imageNumber = gameWindow_supportObj.clickMultiPlayer(5);
 				if(imageNumber == 1)
-					btn5.setIcon(new ImageIcon("src/notification_error.png"));
+					btn5.setIcon(new ImageIcon("src/images/notification_error.png"));
 				else if(imageNumber == 2)
-					btn5.setIcon(new ImageIcon("src/dot.png"));
+					btn5.setIcon(new ImageIcon("src/images/dot.png"));
+				
+				gameWindow_supportObj.checkGameStatus();
 				
 			}
 		});
@@ -218,9 +230,11 @@ public class GameWindow {
 				System.out.println("you pressed btn6");
 				int imageNumber = gameWindow_supportObj.clickMultiPlayer(6);
 				if(imageNumber == 1)
-					btn6.setIcon(new ImageIcon("src/notification_error.png"));
+					btn6.setIcon(new ImageIcon("src/images/notification_error.png"));
 				else if(imageNumber == 2)
-					btn6.setIcon(new ImageIcon("src/dot.png"));
+					btn6.setIcon(new ImageIcon("src/images/dot.png"));
+				
+				gameWindow_supportObj.checkGameStatus();
 				
 			}
 		});
@@ -232,9 +246,11 @@ public class GameWindow {
 				System.out.println("you pressed btn7");
 				int imageNumber = gameWindow_supportObj.clickMultiPlayer(7);
 				if(imageNumber == 1)
-					btn7.setIcon(new ImageIcon("src/notification_error.png"));
+					btn7.setIcon(new ImageIcon("src/images/notification_error.png"));
 				else if(imageNumber == 2)
-					btn7.setIcon(new ImageIcon("src/dot.png"));
+					btn7.setIcon(new ImageIcon("src/images/dot.png"));
+				
+				gameWindow_supportObj.checkGameStatus();
 				
 			}
 		});
@@ -246,9 +262,11 @@ public class GameWindow {
 				System.out.println("you pressed btn8");
 				int imageNumber = gameWindow_supportObj.clickMultiPlayer(8);
 				if(imageNumber == 1)
-					btn8.setIcon(new ImageIcon("src/notification_error.png"));
+					btn8.setIcon(new ImageIcon("src/images/notification_error.png"));
 				else if(imageNumber == 2)
-					btn8.setIcon(new ImageIcon("src/dot.png"));
+					btn8.setIcon(new ImageIcon("src/images/dot.png"));
+				
+				gameWindow_supportObj.checkGameStatus();
 				
 			}
 		});
@@ -260,9 +278,11 @@ public class GameWindow {
 				System.out.println("you pressed btn9");
 				int imageNumber = gameWindow_supportObj.clickMultiPlayer(9);
 				if(imageNumber == 1)
-					btn9.setIcon(new ImageIcon("src/notification_error.png"));
+					btn9.setIcon(new ImageIcon("src/images/notification_error.png"));
 				else if(imageNumber == 2)
-					btn9.setIcon(new ImageIcon("src/dot.png"));
+					btn9.setIcon(new ImageIcon("src/images/dot.png"));
+				
+				gameWindow_supportObj.checkGameStatus();
 				
 			}
 		});

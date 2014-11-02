@@ -20,11 +20,14 @@ import javax.swing.JPanel;
 import javax.swing.JFrame;
 
 public class MainWindow extends JFrame{
-	JButton btn = new JButton("Test");
+	JButton btn = new JButton("Play");
+	JButton btnStatistics = new JButton("Statistics");
+	JButton btnExit = new JButton("Exit");
+	
 	/*		main method      */
 	public static void main(String args[]) throws IOException{
 		
-		/*  creates an instance from MainWindow class  */
+		/*  creates instances  */
 		MainWindow mainWindowObj = new MainWindow();
 		
 		/*  sets that above created instance(frame) visible  */
@@ -40,17 +43,38 @@ public class MainWindow extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				dispose();
+				//dispose();
 				new GameWindow();
 				
 			}
 		});
 		
+		btnStatistics.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new Statistics();
+				
+			}
+		});
+		
+		btnExit.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+				
+			}
+		});
+		
+		
 		setLayout(new BorderLayout());
-		JLabel background = new JLabel(new ImageIcon("src/backGroundImg01.jpg"));
+		JLabel background = new JLabel(new ImageIcon("src/images/backGroundImg01.jpg"));
 		add(background);
 		background.setLayout(new FlowLayout());
 		background.add(btn);
+		background.add(btnStatistics);
+		background.add(btnExit);
 		
 //		add(new MainWindow_Support());
 //		setSize(400, 500);
